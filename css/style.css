@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  font-family: "Droid Sans", arial, serif;
+  justify-content: center;
+}
+
+.col-2 {
+  display: grid;
+}
+
+.order-1 {
+  order: 2;
+}
+
+.order-2 {
+  order: 1;
+  margin-top: 10vh;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #c6a368;
+  font-weight: bold;
+}
+a:hover + .__moveArrow {
+  color: #c6a368;
+  display: inline-block;
+  transition: all 0.5s ease;
+  transform: translateX(80%);
+}
+
+.__moveArrow {
+  color: #c6a368;
+}
+
+.images {
+  position: relative;
+}
+.images__heartIcon {
+  position: absolute;
+  background-color: #fff;
+  width: 20px;
+  top: 30px;
+  right: 90px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    margin-top: 0vh;
+  }
+  .images__heartIcon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
