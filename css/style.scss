@@ -1,5 +1,6 @@
 $button-color: #c6a368;
 $heart-background-color: #fff;
+$content-margin: 8vh;
 
 .container{
     display: grid;
@@ -11,6 +12,12 @@ $heart-background-color: #fff;
     font-family: 'Droid Sans', arial, serif;
     justify-content: center;
 }
+.col-1{
+    margin-bottom: $content-margin;
+    &__a{
+        margin-top: $content-margin;
+    }
+}
 .col-2{
     display: grid;
 }
@@ -19,7 +26,7 @@ $heart-background-color: #fff;
 }
 .order-2{
     order: 1;
-    margin-top: 10vh;
+    margin-top: $content-margin;
 }
 h2{
     font-size: 21px;
@@ -79,7 +86,13 @@ a {
         top: 30px;
         right: 30px;
     }
-    #col-1a{
+    .col-1{
+        margin-bottom: 0;
+        &__a{
+            margin-top: 0;
+        }
+    }
+    #col-1-paddingBottom{
         padding-bottom: 30px;
     }
 }
